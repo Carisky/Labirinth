@@ -6,6 +6,8 @@ public class PlayerStats : MonoBehaviour
     public int currentLives;
 
     public int score = 0;
+    private int nextUpgradeScore = 20000; 
+    public bool upgradeAvailable = false; 
 
     void Start()
     {
@@ -24,6 +26,13 @@ public class PlayerStats : MonoBehaviour
     public void GetPoints(int amount)
     {
         score += amount;
+
+        
+        if (score >= nextUpgradeScore)
+        {
+            upgradeAvailable = true;
+            nextUpgradeScore += 20000; 
+        }
     }
 
     public void Heal(int amount)

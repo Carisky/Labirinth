@@ -6,7 +6,7 @@ public class Target : MonoBehaviour
     private int currentHealth;
     private bool isDead = false;
 
-    private int points = 400;
+    private int points = 10000;
     public GameObject heartEffectPrefab;
     public AudioClip hitSound; 
     public AudioClip dieSound; 

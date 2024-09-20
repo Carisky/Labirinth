@@ -33,6 +33,9 @@ public class MoveScript : MonoBehaviour
         if (PauseMenu.isPaused)
             return;
 
+        if(HUD.isUpgradeMenuOpen)
+            return;
+
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 

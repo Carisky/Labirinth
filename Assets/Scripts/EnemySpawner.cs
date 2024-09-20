@@ -5,8 +5,8 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab; 
     public Transform player; 
-    public float spawnDistance = 10f; 
-    public int maxEnemies = 5; 
+    public float spawnDistance = 5f; 
+    public int maxEnemies = 30; 
 
     private List<GameObject> spawnedEnemies = new List<GameObject>(); 
     private GameObject[] spawnPoints; 
